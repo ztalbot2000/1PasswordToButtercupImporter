@@ -1,0 +1,33 @@
+{
+  "name": "1PasswordToButtercupImporter",
+  "version": "1.0.0",
+  "description": "Node.js script to convert exported 1Password vault to a Buttercup vault.",
+  "main": "OnePasswordToButtercupImporter.js",
+  "scripts": {
+    "test": "echo \"Error: no tests available\" && exit 1"
+  },
+  "author": "John Talbot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ztalbot2000/1PasswordToButtercupImporter.git"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "keywords": [
+    "buttercup",
+    "import",
+    "1password",
+    "convert",
+    "password"
+  ],
+  "dependencies": {
+    "@buttercup/importer": "^3.0.1",
+    "buttercup": "^4.13.1"
+  },
+  "peerDependencies": {
+    "buttercup": "^4.13.1",
+    "@buttercup/importer": "^3.0.0"
+  }
+}

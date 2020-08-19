@@ -1,0 +1,6 @@
+.DS_Store
+*.swp
+*.save*
+jsmin
+node_modules
+package-lock.json
