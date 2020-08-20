@@ -131,4 +131,4 @@ onePassImportPromise.then( function(onePassImportData)
     process.exit( -1 );
 });
 
-process.exit( 0 );
+console.log("Done");
