@@ -6,6 +6,18 @@
 
 This vault importer uses the API from buttercup importer to import and create a buttercup vault archive.
 
+## My Impressions of Buttercup after Import
+
+This is my impression and does not reflect the great work of Buttercup.  1Password has a field called "Notes", which was not imported into Buttercup.  The great thing about Open Source is that I actually modified the 1PasswordEntry.js of the Buttercup 1Password Importer to include Notes with these following lines:<BR>
+
+```
+  if (rawItem.secureContents.notesPlain) {
+     entry.meta.notes = rawItem.secureContents.notesPlain;
+  }
+
+```
+  The result was that my notes were now placed into Buttercup!  However, Since Buttercup is HTML based, my imported notes did not have any newline formatting and was just one big long input box.  Further changes that I am not willing to pursue.  For this reason only, I will try other password managers before continuing with Buttercup.
+
 ### Usage
 
 This tool is a standalone node.js application since I could not get the Buttercup GUI to import my exported 1Password vault.

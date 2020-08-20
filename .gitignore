@@ -3,5 +3,5 @@
 *.save*
 node_modules
 package-lock.json
-data.1pif
-user.bcup
+*.1pif
+*.bcup
