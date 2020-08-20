@@ -1,6 +1,6 @@
 #!/usr/local/bin/node
 
-if ( "$1" )
+if ( process.argv.length > 2 )
 {
    console.log(`
    This tool converts an exported 1Password vault to a vault that can be imported into buttercup.  For whatever reason buttercup could not do this from the GUI and while there are API's out there, nothing was automatic.  This tool uses those API's of "buttercup" and "@buttercup/importer" that you must require.
