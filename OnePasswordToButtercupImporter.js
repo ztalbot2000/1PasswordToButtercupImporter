@@ -130,5 +130,3 @@ onePassImportPromise.then( function(onePassImportData)
     console.log( "Failed: " + reject );
     process.exit( -1 );
 });
-
-console.log("Done");
